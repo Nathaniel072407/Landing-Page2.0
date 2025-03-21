@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        .header {
+            font-size: 28px;
+            font-weight: bold;
+            padding: 30px;
+            background: #0073e6;
+            color: white;
+            border-radius: 10px 10px 0 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: #ddd;
+            border-radius: 5px;
+        }
+        .menu-buttons svg {
+            fill: lightblue;
+            stroke: darkgrey;
+            stroke-width: 2px;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+        .navbar input {
+            padding: 10px;
+            font-size: 1rem;
+            width: 60%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .reload-button {
+            cursor: pointer;
+        }
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .features-container {
+            text-align: left;
+            max-width: 400px;
+        }
+        .list-item {
+            background: #0073e6;
+            color: white;
+            padding: 15px;
+            margin: 5px 0;
+            border-radius: 5px;
+            font-size: 1.1rem;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #005bb5;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            font-size: 1.1rem;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background: #003f80;
+        }
+        .video-container iframe {
+            width: 600px;
+            max-width: 400px;
+            height: 280px;
+            border-radius: 5px;
+        }
+        .testimonial {
+            font-style: italic;
+            background: #e0e0e0;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 5px solid #0073e6;
+        }
+        .content-box {
+            display: flex;
+            align-items: center;
+            background: #b3e5fc;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: left;
+            max-width: 600px;
+            margin: auto;
+        }
+        .content-box img {
+            width: 80px;
+            margin-right: 20px;
+        }
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .section {
+            flex: 1;
+            padding: 20px;
+            background: #cfd8dc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            min-width: 300px;
+            text-align: center;
+        }
+        .footer {
+            margin-top: 20px;
+            padding: 15px;
+            background: gray;
+            color: white;
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+        }
+        @media (max-width: 768px) {
+            .container { width: 95%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="menu-buttons">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <circle cx="8" cy="8" r="7" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <circle cx="8" cy="8" r="7" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <circle cx="8" cy="8" r="7" />
+                </svg>
+            </div>
+            <input type="text" placeholder="Search...">
+            <svg class="reload-button" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"></path>
+                <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"></path>
+            </svg>
+        </nav>
+        <div class="header">AN EYE-CATCHING HEADLINE</div>
+        <div class="content-wrapper">
+            <div class="features-container">
+                <div class="list">
+                    <div class="list-item">✔ Feature 1</div>
+                    <div class="list-item">✔ Feature 2</div>
+                    <div class="list-item">✔ Feature 3</div>
+                    <a href="#" class="button">CLICK HERE</a>
+                </div>
+            </div>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="testimonial">Nats Pacs Nats Pacs Nats Pacs Nats Pacs</div>
+        <div class="content-box">
+            <img src="hatdog1.jpeg" alt="Placeholder Image">
+            <div>Nats Pacs Nats Pacs Nats Pacs Nats Pacs Nats Pacs Nats Pacs Nats Pacs Nats Pacs</div>
+        </div>
+        <div class="wrapper">
+            <div class="section">
+                <h3>Section 5 Title</h3>
+                <p>Nats Pacs Nats Pacs Nats Pacs Nats Pacs</p>
+            </div>
+            <div class="section">
+                <p>✔ Verified & Trusted Information</p>
+            </div>
+        </div>
+        <div class="footer">&copy; 2025 All Rights Reserved</div>
+    </div>
+</body>
+</html>
